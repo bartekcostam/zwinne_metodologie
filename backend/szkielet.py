@@ -28,7 +28,7 @@ if __name__ == "__main__":
             print(b"Data: " + data)
             con.sendall(b"Server reply")        #serwer sends data
 
-            cur.execute("SELECT * FROM test")   #SELECT query
+            cur.execute("SELECT * FROM events")   #SELECT query
 
             for x in cur.fetchall():            #prints first cell of all rows
                 print(row[0])
