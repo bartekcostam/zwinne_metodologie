@@ -30,8 +30,8 @@ if __name__ == "__main__":
 
             cur.execute("SELECT * FROM events")   #SELECT query
 
-            for x in cur.fetchall():            #prints first cell of all rows
-                print(row[0])
+            for x in cur.fetchall():            #prints all rows
+                print(x)
 
         except socket.error:
             print("Error.")
